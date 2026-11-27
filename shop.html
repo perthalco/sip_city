@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — SipCity (Template)</title>
+  <meta name="description" content="Static template: product catalog page. All products and prices are placeholders." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍸</text></svg>" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">🍸 <span data-brand>SipCity</span></a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link" data-i18n="home">Home</a>
+        <a href="shop.html" class="nav__link nav__link--active" data-i18n="shop">Shop</a>
+      </nav>
+      <div class="header__actions">
+        <!-- CONTACT PLACEHOLDERS: hrefs come from js/data.js -->
+        <a class="contact-us" data-wa href="#" target="_blank" rel="noopener" title="Contact Us">📱 Contact Us</a>
+        <button class="btn btn--cart" type="button" data-cart-open>🛒 Cart <span class="cart-badge" data-cart-badge style="display:none">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= SHOP CONTROLS ================= -->
+    <section class="shop-head">
+      <div class="container">
+        <h1 data-i18n="shopTitle">Shop</h1>
+        <p class="muted">Didn't have what you want ?, feel free to contact us</p>
+        <div class="shop-controls">
+          <input type="search" id="searchInput" placeholder="Search drinks…" aria-label="Search" />
+          <select id="sortSelect" aria-label="Sort">
+            <option value="default">Sort: default</option>
+            <option value="price-asc">Price: low → high</option>
+            <option value="price-desc">Price: high → low</option>
+            <option value="name">Name A–Z</option>
+          </select>
+        </div>
+        <div class="chips" id="catChips"><!-- filter chips injected by js/app.js --></div>
+        <div class="chips chips--sub" id="originChips" hidden><!-- Thai / Non-Thai subcategory chips injected by js/app.js --></div>
+        <div class="chips chips--sub" id="subcatChips" hidden><!-- spirit subcategory chips injected by js/app.js --></div>
+      </div>
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+    <section class="section" style="padding-top:24px">
+      <div class="container">
+        <div class="product-grid" id="productGrid"></div>
+        <p class="muted" id="emptyMsg" hidden>No drinks match your search.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h4>🍸 <span data-brand>SipCity</span></h4>
+          <p>Didn't See What You Want to Order, Don’t Hesitate to Contact Us.<p>
+          <!-- CONTACT PLACEHOLDERS -->
+          <a data-tel href="#"><span data-phone>+66 84 054 3254</span></a>
+          <a data-wa href="#" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <div>
+          <h4 data-i18n="footerShop">Shop</h4>
+          <a href="shop.html?cat=wine">Wine &amp; Champagne</a>
+          <a href="shop.html?cat=spirits">Spirits</a>
+          <a href="shop.html?cat=sake-soju">Sake &amp; Soju</a>
+          <a href="shop.html?cat=mixers">Mixers &amp; Snacks</a>
+          <a href="shop.html" data-i18n="viewAllNoArrow">View all</a>
+        </div>
+        <div>
+          <h4 data-i18n="footerInfo">Info</h4>
+          <a href="index.html" data-i18n="home">Home</a>
+          <a href="shop.html" data-i18n="shop">Shop</a>
+          <a href="index.html#faq" data-i18n="faq">FAQ</a>
+          <a href="#" title="Add your privacy policy page" data-i18n="privacyPolicy">Privacy policy</a>
+        </div>
+        <div>
+          <h4 data-i18n="footerHours">Hours</h4>
+          <a data-i18n="hours24_7">24/7 But Mostly At Night</a>
+          <a data-i18n="deliveryTime">Delivery 30 min–1.30 hour, depending on where are you and the amount of order.</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 <span data-brand>SipCity</span> — Brotherly Business</span>
+        <span>Made By a Couple of Guys in the Shed</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

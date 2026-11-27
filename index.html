@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SipCity — 24/7 Alcohol Delivery </title>
+  <meta name="description" content="Static template: 24/7 alcohol delivery landing page. All content is a placeholder." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍸</text></svg>" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">🍸 <span data-brand>SipCity</span></a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link nav__link--active">Home</a>
+        <a href="shop.html" class="nav__link">Shop</a>
+      </nav>
+      <div class="header__actions">
+        <!-- CONTACT PLACEHOLDERS: hrefs come from js/data.js -->
+        <a class="icon-btn" data-wa href="#" target="_blank" rel="noopener" title="WhatsApp">💬</a>
+        <a class="icon-btn" data-tel href="#" title="Call">📞</a>
+        <button class="btn btn--cart" type="button" data-cart-open>🛒 Cart <span class="cart-badge" data-cart-badge style="display:none">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <p class="hero__kicker">nightly alcohol delivery in <span data-city>Chiang Mai</span></p>
+        <h1 class="hero__title">Drinks you love,<br />delivered <span class="accent">At Night</span></h1>
+        <p class="hero__text">
+         
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="shop.html" data-i18n="goToShop">Go to shop</a>
+          <a class="btn btn--ghost" href="#faq" data-i18n="howItWorks">How it works</a>
+        </div>
+        <ul class="hero__stats">
+          <li><strong>30m - 1.3h</strong><span>Delivery</span></li>
+          <li><strong>24/7<strong><span>Mostly at night</span></li>
+          <li><strong>Free</strong><span>over <span data-free-min>฿2,499</span></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= CATEGORIES ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="shopByCategory">Shop by category</h2>
+          <a class="link" href="shop.html" data-i18n="viewAll">View all →</a>
+        </div>
+        <div class="cat-grid" id="catGrid"><!-- tiles injected by js/app.js --></div>
+      </div>
+    </section>
+
+    <!-- ================= WHY US ================= -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__head"><h2 data-i18n="whyOrder">Why order from us</h2></div>
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-card__num">01</div>
+            <h3 data-i18n="quality">Quality</h3>
+            <p>We know the place and many vendor</p>
+          </div>
+          <div class="why-card">
+            <div class="why-card__num">02</div>
+            <h3 data-i18n="speed">Speed</h3>
+            <p>!Mostly at night operation and delivery in 30–60 minutes anywhere in the Main city maybe more if you are far from the main city.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-card__num">03</div>
+            <h3 data-i18n="convenience">Convenience</h3>
+            <p>pay cash or by transfer, order anytime, ask for anything not listed in the shop.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURES ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head"><h2 data-i18n="whatYouGet">What you get</h2></div>
+        <ul class="feature-list">
+          <li><span class="check">✓</span><span><strong data-i18n="roundTheClock">Round-the-clock delivery.</strong> <span class="muted">We Mostly active at night.</span></span></li>
+          <li><span class="check">✓</span><span><strong data-i18n="freeDelivery">Free delivery.</strong> <span class="muted">On orders of <span data-free-min>฿2,499</span> or more.</span></span></li>
+          <li><span class="check">✓</span><span><strong data-i18n="largeSelection">Large selection.</strong> <span class="muted">Alcohol, mixers and snacks in one order.</span></span></li>
+          <li><span class="check">✓</span><span><strong data-i18n="flexibleTerms">Flexible terms.</strong> <span class="muted">Schedule a time or request off-catalog items.</span></span></li>
+          <li><span class="check">✓</span><span><strong data-i18n="easyPayment">Easy payment.</strong> <span class="muted">Cash or card transfer — whatever floats your boat.</span></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= DELIVERY AREAS ================= -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__head"><h2 data-i18n="deliverAcross">We deliver across <span data-city>Chiang Mai</span></h2></div>
+        <p class="muted" style="margin-top:0">Just Told Us Where And Well Be There in a Hurry.</p>
+        <div class="chips">
+          <span class="chip">Old City</span>
+          <span class="chip">Nimman</span>
+          <span class="chip">Santitham</span>
+          <span class="chip">Riverside</span>
+          <span class="chip">Chang Phueak</span>
+          <span class="chip">Suthep</span>
+          <span class="chip">Mae Hia</span>
+          <span class="chip">Hang Dong</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section__head"><h2 data-i18n="questions">Questions</h2></div>
+        <div class="faq">
+          <details>
+            <summary>How long does delivery take?</summary>
+            <p>typically 30 minutes to 1.3 hour, depending on your location and , depending on where are you and the amount of order.</p>
+          </details>
+          <details>
+            <summary>Is there a minimum order?</summary>
+            <p> no minimum. Delivery is free on orders of <span data-free-min>฿2,499</span> or more.</p>
+          </details>
+          <details>
+            <summary>How can I pay?</summary>
+            <p>cash on delivery or bank/card transfer.</p>
+          </details>
+          <details>
+            <summary>Can I order something not in the catalog?</summary>
+            <p>yes, message us and we will try to source it, we'll let you know if we have it on our hand.</p>
+          </details>
+          <details>
+            <summary>Can I schedule a delivery for a specific time?</summary>
+            <p>yes, pick a convenient and reasonable time slot in the order notes or via messenger.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h4>🍸 <span data-brand>SipCity</span></h4>
+          <p>Didn't See What You Want to Order, Don’t Hesitate to Contact Us We'll Try To Find It.</p>
+          <!-- CONTACT PLACEHOLDERS -->
+          <a data-tel href="#"><span data-phone>+66 XX XXX XXXX</span></a>
+          <a data-wa href="#" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <div>
+          <h4 data-i18n="footerShop">Shop</h4>
+          <a href="shop.html?cat=wine">Wine &amp; Champagne</a>
+          <a href="shop.html?cat=spirits">Spirits</a>
+          <a href="shop.html?cat=beer">Beer</a>
+          <a href="shop.html" data-i18n="viewAllNoArrow">View all</a>
+        </div>
+        <div>
+          <h4 data-i18n="footerInfo">Info</h4>
+          <a href="index.html" data-i18n="home">Home</a>
+          <a href="shop.html" data-i18n="shop">Shop</a>
+          <a href="#faq" data-i18n="faq">FAQ</a>
+          <a href="#" title="Add your privacy policy page" data-i18n="privacyPolicy">Privacy policy</a>
+        </div>
+        <div>
+          <h4 data-i18n="footerHours">Hours</h4>
+          <a data-i18n="hours24_7">24/7</a>
+          <a data-i18n="deliveryTime">Delivery 30 min–1.30 hour</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 <span data-brand>SipCity</span> - Brotherly Business</span>
+        <span>Made By a Couple of Guys in the Shed</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
